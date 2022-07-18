@@ -1,0 +1,36 @@
+.bgd__projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+}
+
+.bgd__projects-games {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 4rem;
+}
+
+
+.bgd__projects h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+@media screen and (max-width: 1080px) {
+    .bgd__projects-games {
+        flex-direction: column;
+    }
+
+    .cards__item__img {
+        width: 320px;
+        height: 180px;
+    }
+}
