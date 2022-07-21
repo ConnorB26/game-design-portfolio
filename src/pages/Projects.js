@@ -1,20 +1,22 @@
 import React from 'react';
 import CardItem from '../components/cards/CardItem';
+import { Slide } from 'react-awesome-reveal';
 import './Projects.css';
 
-import timeManagement from '../assets/Game Materials/MainMenus/TimeManagement-MainMenu.png';
-import timeCapsule from '../assets/Game Materials/MainMenus/TimeCapsule-MainMenu.png';
-import vacDest from '../assets/Game Materials/MainMenus/VD-MainMenu.png';
-import nockFletcher from '../assets/Game Materials/MainMenus/NockFletcher-MainMenu.PNG';
-import fade from '../assets/Game Materials/MainMenus/Fade-MainMenu.png';
-import debugging from '../assets/Game Materials/MainMenus/Debugging-MainMenu.PNG';
-import futureMe from '../assets/Game Materials/MainMenus/FutureMe-MainMenu.png';
-import minionMania from '../assets/Game Materials/MainMenus/MinionMania-MainMenu.png';
-import candyThief from '../assets/Game Materials/MainMenus/CandyThief-MainMenu.png';
+import timeManagement from '../assets/Game Materials/JPG MainMenus/TimeManagement-MainMenu.jpg';
+import timeCapsule from '../assets/Game Materials/JPG MainMenus/TimeCapsule-MainMenu.jpg';
+import vacDest from '../assets/Game Materials/JPG MainMenus/VD-MainMenu.jpg';
+import nockFletcher from '../assets/Game Materials/JPG MainMenus/NockFletcher-MainMenu.jpg';
+import fade from '../assets/Game Materials/JPG MainMenus/Fade-MainMenu.jpg';
+import debugging from '../assets/Game Materials/JPG MainMenus/Debugging-MainMenu.jpg';
+import futureMe from '../assets/Game Materials/JPG MainMenus/FutureMe-MainMenu.jpg';
+import minionMania from '../assets/Game Materials/JPG MainMenus/MinionMania-MainMenu.jpg';
+import candyThief from '../assets/Game Materials/JPG MainMenus/CandyThief-MainMenu.jpg';
 
 export const Projects = () => {
   return (
     <div className = "bgd__projects section__padding" id = "projects">
+      <Slide cascading triggerOnce>
         <h1 className = "gradient__text-new">2021</h1>
         <div className = "bgd__projects-games">
           <CardItem src = { timeManagement } path = "/projects/time-management"/>
@@ -42,6 +44,7 @@ export const Projects = () => {
         <div className = "bgd__projects-games">
           <CardItem src = { candyThief } path = "/projects/candy-thief"/>
         </div>
+      </Slide>
     </div>
   )
 }

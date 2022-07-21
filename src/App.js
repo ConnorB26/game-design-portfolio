@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Footer } from './containers';
-import { Navbar } from './components';
+//import { Footer } from './containers';
+import { Navbar } from './containers';
 import './App.css';
 
 import Home from './pages/Home';
@@ -17,6 +17,7 @@ import FutureMe from './pages/Games/FutureMe';
 import MinionMania from './pages/Games/MinionMania';
 import CandyThief from './pages/Games/CandyThief';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import Footer from './containers/footer/Footer';
 
 export const App = () => {
   return (
@@ -39,7 +40,7 @@ export const App = () => {
             <Route exact path="*" element={<Navigate to="/not-found"/>}/>
           </Routes>
         </div>
-        <Footer />
+        <Footer/>
     </div>
   )
 }
