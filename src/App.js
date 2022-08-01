@@ -25,19 +25,19 @@ export const App = () => {
         <div className = "gradient__bg">
           <Navbar />
           <Routes>
-            <Route exact path="/" element = {<Home />}/>
-            <Route exact path="/not-found" element = {<NotFound />}/>
-            <Route exact path="/projects" element = {<Projects />}/>
-              <Route exact path="/projects/time-management" element = {<TimeManagement />}/>
-              <Route exact path="/projects/time-capsule" element = {<TimeCapsule />}/>
-              <Route exact path="/projects/vaccination-destination" element = {<VacDest />}/>
-              <Route exact path="/projects/nock-fletcher" element = {<NockFletcher />}/>
-              <Route exact path="/projects/fade" element = {<Fade />}/>
-              <Route exact path="/projects/debugging" element = {<Debugging />}/>
-              <Route exact path="/projects/future-me" element = {<FutureMe />}/>
-              <Route exact path="/projects/minion-mania" element = {<MinionMania />}/>
-              <Route exact path="/projects/candy-thief" element = {<CandyThief />}/>
-            <Route exact path="*" element={<Navigate to="/not-found"/>}/>
+            <Route exact path = "/" element = {<Home />}/>
+            <Route path = "/not-found" element = {<NotFound />}/>
+            <Route exact path = "/projects" element = {<Projects />}/>
+              <Route path = "/projects/time-management" element = {<TimeManagement />}/>
+              <Route path = "/projects/time-capsule" element = {<TimeCapsule />}/>
+              <Route path = "/projects/vaccination-destination" element = {<VacDest />}/>
+              <Route path = "/projects/nock-fletcher" element = {<NockFletcher />}/>
+              <Route path = "/projects/fade" element = {<Fade />}/>
+              <Route path = "/projects/debugging" element = {<Debugging />}/>
+              <Route path = "/projects/future-me" element = {<FutureMe />}/>
+              <Route path = "/projects/minion-mania" element = {<MinionMania />}/>
+              <Route path = "/projects/candy-thief" element = {<CandyThief />}/>
+            <Route path = "*" element = {<Navigate to = "/not-found"/>}/>
           </Routes>
         </div>
         <Footer/>

@@ -6,7 +6,6 @@ import googlePlayLogo from '../../assets/Other Assets/GooglePlayLogo.png';
 import youtubeLogo from '../../assets/Other Assets/YouTubeLogo.png';
 import linkedInLogo from '../../assets/Other Assets/LinkedInLogo.png';
 import pdfLogo from '../../assets/Other Assets/PDFIcon.png'
-import pdf from "../../assets/Other Assets/Resume.pdf";
 import './footer.css';
 
 const Footer = () => {
@@ -31,7 +30,7 @@ const Footer = () => {
           <a href = "https://www.youtube.com/channel/UC7BMrUMx2Ox0RQjxNJDK1jQ" target = "_blank" rel="noopener noreferrer">
             <img src={youtubeLogo} alt = "YouTube Channel" data-tip = "YouTube Channel"/>
           </a>
-          <a href={pdf} target="_blank" rel="noopener noreferrer">
+          <a href = "https://www.dropbox.com/s/f64d7nq2ekkqet6/Resume.pdf?dl=0" target="_blank" rel="noopener noreferrer">
             <img src={pdfLogo} alt = "Resume" data-tip = "Resume"/>
           </a>
         </div>

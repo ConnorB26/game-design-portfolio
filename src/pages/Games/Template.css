@@ -80,6 +80,14 @@
     }
 
     .arrows {
-    margin-top: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .bgd__header-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .bgd__header-content p {
+        font-size: 17px;
     }
 }

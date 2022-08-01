@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player';
 import ImageSlider from '../../components/imageslider/ImageSlider';
 import { Fade } from 'react-awesome-reveal';

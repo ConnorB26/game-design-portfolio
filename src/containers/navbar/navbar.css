@@ -35,8 +35,8 @@
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 26px;
+    line-height: 26px;
     text-transform: capitalize;
 
     margin: 0 1rem;
@@ -51,7 +51,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 1.5px;
+    height: 1px;
     bottom: -4px;
     left: 0;
     background-color: #fff;
@@ -80,22 +80,22 @@
     }
 
     .bgd__navbar-links_container a {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 23px;
+        line-height: 23px;
     }
 
     .bgd__navbar-links_container a::before {
-        height: 1px;
+        height: 1.5px;
     }
 }
 
 @media screen and (max-width: 550px) {
     .bgd__navbar {
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .bgd__navbar-links_container a {
-        font-size: 15px;
-        line-height: 15px;
+        font-size: 20px;
+        line-height: 20px;
     }
 }
