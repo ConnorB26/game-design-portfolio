@@ -6,6 +6,7 @@ import googlePlayLogo from '../../assets/Other Assets/GooglePlayLogo.png';
 import youtubeLogo from '../../assets/Other Assets/YouTubeLogo.png';
 import linkedInLogo from '../../assets/Other Assets/LinkedInLogo.png';
 import pdfLogo from '../../assets/Other Assets/PDFIcon.png'
+import githubLogo from '../../assets/Other Assets/GitHubIcon.png'
 import './footer.css';
 
 const Footer = () => {
@@ -20,6 +21,9 @@ const Footer = () => {
           </a>
           <a href = "https://www.linkedin.com/in/connor-bowling/" target = "_blank" rel="noopener noreferrer">
             <img src={linkedInLogo} alt = "LinkedIn" data-tip = "LinkedIn"/>
+          </a>
+          <a href = "https://www.github.com/ConnorB26" target="_blank" rel="noopener noreferrer">
+            <img src={githubLogo} alt = "GitHub" data-tip = "GitHub"/>
           </a>
           <a href = {'mailto:connorbowling26@gmail.com'} target = "_blank" rel="noopener noreferrer">
           <img src={mailPers} alt = "Personal Email" data-tip = "Personal Email"/>
