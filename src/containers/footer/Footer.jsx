@@ -34,7 +34,7 @@ const Footer = () => {
           <a href = "https://www.youtube.com/channel/UC7BMrUMx2Ox0RQjxNJDK1jQ" target = "_blank" rel="noopener noreferrer">
             <img src={youtubeLogo} alt = "YouTube Channel" data-tip = "YouTube Channel"/>
           </a>
-          <a href = "https://www.dropbox.com/s/f64d7nq2ekkqet6/Resume.pdf?dl=0" target="_blank" rel="noopener noreferrer">
+          <a href = "https://www.dropbox.com/s/bs6ea8zv87odav0/Resume.pdf?dl=0" target="_blank" rel="noopener noreferrer">
             <img src={pdfLogo} alt = "Resume" data-tip = "Resume"/>
           </a>
         </div>
