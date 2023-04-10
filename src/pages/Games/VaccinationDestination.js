@@ -2,12 +2,12 @@ import React from 'react';
 import Template from './Template';
 
 import logo from '../../assets/Other Assets/DownloadIconWhite.png';
-import mainMenu from '../../assets/Game Materials/JPG MainMenus/VD-MainMenu.jpg';
-import ss1 from '../../assets/Game Materials/JPG Screenshots/VD1.jpg';
-import ss2 from '../../assets/Game Materials/JPG Screenshots/VD2.jpg';
-import ss3 from '../../assets/Game Materials/JPG Screenshots/VD3.jpg';
-import ss4 from '../../assets/Game Materials/JPG Screenshots/VD4.jpg';
-import ss5 from '../../assets/Game Materials/JPG Screenshots/VD5.jpg';
+import mainMenu from '../../assets/Game Materials/MainMenus/VD-MainMenu.jpg';
+import ss1 from '../../assets/Game Materials/Screenshots/VD1.jpg';
+import ss2 from '../../assets/Game Materials/Screenshots/VD2.jpg';
+import ss3 from '../../assets/Game Materials/Screenshots/VD3.jpg';
+import ss4 from '../../assets/Game Materials/Screenshots/VD4.jpg';
+import ss5 from '../../assets/Game Materials/Screenshots/VD5.jpg';
 
 const ss = [{ image: mainMenu }, { image: ss1 }, { image: ss2 }, { image: ss3 }, { image: ss4 }, { image: ss5 }];
 

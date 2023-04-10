@@ -2,16 +2,16 @@ import React from 'react';
 import Template from './Template';
 
 import logo from '../../assets/Game Materials/Icons/TimeManagement-Icon.png';
-import mainMenu from '../../assets/Game Materials/JPG MainMenus/TimeManagement-MainMenu.jpg';
-import ss1 from '../../assets/Game Materials/JPG Screenshots/TimeManagement1.jpg';
-import ss2 from '../../assets/Game Materials/JPG Screenshots/TimeManagement2.jpg';
-import ss3 from '../../assets/Game Materials/JPG Screenshots/TimeManagement3.jpg';
-import ss4 from '../../assets/Game Materials/JPG Screenshots/TimeManagement4.jpg';
-import ss5 from '../../assets/Game Materials/JPG Screenshots/TimeManagement5.jpg';
-import ss6 from '../../assets/Game Materials/JPG Screenshots/TimeManagement6.jpg';
-import ss7 from '../../assets/Game Materials/JPG Screenshots/TimeManagement7.jpg';
-import ss8 from '../../assets/Game Materials/JPG Screenshots/TimeManagement8.jpg';
-import ss9 from '../../assets/Game Materials/JPG Screenshots/TimeManagement9.jpg';
+import mainMenu from '../../assets/Game Materials/MainMenus/TimeManagement-MainMenu.jpg';
+import ss1 from '../../assets/Game Materials/Screenshots/TimeManagement1.jpg';
+import ss2 from '../../assets/Game Materials/Screenshots/TimeManagement2.jpg';
+import ss3 from '../../assets/Game Materials/Screenshots/TimeManagement3.jpg';
+import ss4 from '../../assets/Game Materials/Screenshots/TimeManagement4.jpg';
+import ss5 from '../../assets/Game Materials/Screenshots/TimeManagement5.jpg';
+import ss6 from '../../assets/Game Materials/Screenshots/TimeManagement6.jpg';
+import ss7 from '../../assets/Game Materials/Screenshots/TimeManagement7.jpg';
+import ss8 from '../../assets/Game Materials/Screenshots/TimeManagement8.jpg';
+import ss9 from '../../assets/Game Materials/Screenshots/TimeManagement9.jpg';
 
 const ss = [{ image: mainMenu }, { image: ss1 }, { image: ss2 }, { image: ss3 }, { image: ss4 }, { image: ss5 }, { image: ss6 }, { image: ss7 }, { image: ss8 }, { image: ss9 }];
 
