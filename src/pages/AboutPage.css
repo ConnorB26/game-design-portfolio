@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+ul li svg {
+    margin-right: 10px;
+}
+
+ul li strong{
+    margin-right: 10px;
+}

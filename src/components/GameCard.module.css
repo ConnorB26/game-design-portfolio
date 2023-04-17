@@ -1,0 +1,19 @@
+.gameCard {
+    margin-bottom: 2rem;
+    flex: 1 1 auto;
+    max-width: 640px;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.gameCard:hover {
+    transform: scale(1.05);
+}
+
+.cardImg {
+    max-width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+}

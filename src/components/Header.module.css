@@ -1,0 +1,32 @@
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+.logoMobile {
+  display: none;
+  height: 75px;
+  width: auto;
+}
+
+.logoDesktop {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .logoDesktop {
+    display: none;
+  }
+
+  .logoMobile {
+    display: inline;
+  }
+}
+
+.navItemText {
+  font-size: 1.4rem !important;
+}
+
+.customNav {
+  margin: 1rem 2rem;
+}

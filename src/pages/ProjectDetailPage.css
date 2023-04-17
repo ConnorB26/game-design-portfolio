@@ -1,0 +1,45 @@
+.icon {
+    width: 128px;
+    height: 128px;
+}
+
+.project-page {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.project-page h1,
+h2 {
+    padding-bottom: 0.75rem;
+}
+
+.description {
+    text-align: left;
+}
+
+.image-gallery-slide {
+    margin: 0 auto;
+    display: block;
+    max-width: 640px;
+    max-height: 360px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.zip-info-text {
+    margin-top: 1rem;
+}
+
+iframe {
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+    max-width: 640px;
+    max-height: 360px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.group {
+    margin-top: 5rem;
+}

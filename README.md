@@ -1,7 +1,13 @@
 # [Bowling Game Design](https://bowlinggamedesign.com/) - Connor Bowling's Game Design Portfolio
 
-This site was designed as a personal project to learn React, JavaScript, HTML, and CSS, and as a way to formally display my most completed video game projects in a more professional manner. This project ended up being purely front-end since I'm only just showing pictures, videos, text, etc., and have no need for an internal database or any kind of back-end processing. However, it was still a great learning excerise in a field I hadn't quite dabbled in yet and I plan to continually update this website as I make more games.
+Welcome to Connor Bowling's Game Design Portfolio, a showcase of my most accomplished video game projects. I created this site as a personal project to learn React, JavaScript, HTML, and CSS, and to present my work in a professional manner. While this project is purely front-end—since it only displays pictures, videos, and text without the need for a back-end or database—it still serves as an excellent learning experience in a field I hadn't explored before. As I continue to develop more games, I plan to update this website regularly.
 
-### Problems Encountered & Solutions
+### Overcoming Design Challenges
 
-My main issue when creating and now updating this website is my lack of artistic capabilities. I'm a programmer first and so although creating the content with HTML and JavaScript wasn't much of a challenge for me, designing the layout, colors, and styling, was really difficult. I once re-designed the entire website layout, color palette, etc., didn't like it after many hours of work, and simply deleted it all. To help myself with this issue, I found some online resources to get a color palette and other tools where I could layout how I wanted my site to look with drag and drop features, then copy some of the CSS necessary to make my content look like I wanted it to.
+As a programmer, I'm highly proficient in creating content with HTML and JavaScript. However, I faced challenges in designing the website's layout, colors, and styling due to my limited artistic capabilities. There was even a time when I redesigned the entire website, only to scrap it after hours of work because it didn't meet my expectations.
+
+To overcome these challenges, I turned to online resources for help. I found tools that provided color palettes and allowed me to create a visual layout using drag-and-drop features. These tools enabled me to generate the necessary CSS to style my website the way I envisioned it.
+
+### Lessons Learned & Future Improvements
+
+This project taught me valuable lessons in React, JavaScript, HTML, and CSS while also helping me improve my design skills. As I continue to work on new games, I plan to refine and update this portfolio site to reflect my growth as a game designer and developer. By exploring new tools and resources, I hope to keep enhancing my design abilities and deliver a visually appealing, user-friendly experience for visitors.
