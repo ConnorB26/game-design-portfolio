@@ -43,7 +43,7 @@ const AboutPage = () => {
             <li><FaGithub /> <strong>GitHub:</strong> <a href="https://www.github.com/ConnorB26" target="_blank" rel="noreferrer">https://www.github.com/ConnorB26</a></li>
             <li><FaGooglePlay /> <strong>Google Play:</strong> <a href="https://play.google.com/store/apps/developer?id=BowlingGames" target="_blank" rel="noreferrer">https://play.google.com/store/apps/developer?id=BowlingGames</a></li>
             <li><FaYoutube /> <strong>YouTube:</strong> <a href="https://www.youtube.com/channel/UC7BMrUMx2Ox0RQjxNJDK1jQ" target="_blank" rel="noreferrer">https://www.youtube.com/channel/UC7BMrUMx2Ox0RQjxNJDK1jQ</a></li>
-            <li><FaFilePdf /> <a href="https://www.dropbox.com/s/teiuuhge4b11v17/Resume.pdf?dl=0" target="_blank" rel="noreferrer"><strong>Resume</strong> </a></li>
+            <li><FaFilePdf /> <a href="https://drive.google.com/file/d/1xVSFtmVFo54qaA_uwgGYNh_F-e0wqIXH/view" target="_blank" rel="noreferrer"><strong>Resume</strong> </a></li>
           </Fade>
         </ul>
       </Fade>
