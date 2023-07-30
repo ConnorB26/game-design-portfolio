@@ -3,7 +3,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/icons-logos/Logo.png';
 import logoMobile from '../assets/icons-logos/Logo-Mobile-NoBevel.png';
 import styles from './Header.module.css';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const location = useLocation();
@@ -18,9 +18,9 @@ const Header = () => {
         <Navbar.Toggle aria-controls="navbar" />
         <Navbar.Collapse id="navbar">
           <Nav activeKey={location.pathname} className="ms-auto">
-            <Nav.Link href="/" className={styles.navItemText}>Home</Nav.Link>
-            <Nav.Link href="/portfolio" className={styles.navItemText}>Games</Nav.Link>
-            <Nav.Link href="/about" className={styles.navItemText}>About</Nav.Link>
+            <Link to="" className={`nav-link ${styles.navItemText}`}>Home</Link>
+            <Link to="portfolio" className={`nav-link ${styles.navItemText}`}>Portfolio</Link>
+            <Link to="about" className={`nav-link ${styles.navItemText}`}>About</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

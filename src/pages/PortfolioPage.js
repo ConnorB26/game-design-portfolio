@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 import GameCard from '../components/GameCard';
-import GameCardGrid from '../components/GameCardGrid';
+import './PortfolioPage.css';
 
 const PortfolioPage = ({ games }) => {
   // Function to group games by their release year
@@ -33,11 +33,11 @@ const PortfolioPage = ({ games }) => {
                 <h1 className="text-center">{year}</h1>
               </Col>
             </Row>
-            <GameCardGrid>
+            <div className='gameCardGrid'>
               {gamesByYear[year].map((game) => (
                 <GameCard key={game.id} game={game} />
               ))}
-            </GameCardGrid>
+            </div>
           </div>
         ))}
       </Fade>

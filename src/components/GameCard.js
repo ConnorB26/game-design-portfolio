@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './GameCard.module.css';
+import { Link } from 'react-router-dom';
 
 const GameCard = ({ game }) => {
   return (
     <div className={styles.gameCard}>
-      <a href={`/portfolio/${game.id}`}>
+      <Link to={`/portfolio/${game.id}`}>
         <img src={game.mainMenu} alt={game.title} className={styles.cardImg} />
-      </a>
+      </Link>
     </div>
   );
 };
