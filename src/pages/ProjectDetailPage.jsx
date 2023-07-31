@@ -1,13 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Fade } from 'react-awesome-reveal';
 import { Carousel } from 'react-responsive-carousel';
+import gamesData from '../data/games.json';
+import PageTransition from '../components/PageTransition';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './ProjectDetailPage.css';
+import { Container } from 'react-bootstrap';
 
-const ProjectDetailPage = ({ games }) => {
+const imagesContext = require.context('../assets/games', true, /\.(webp)$/);
+
+const ProjectDetailPage = () => {
     const { id } = useParams();
-    const game = games.find((game) => game.id === id);
+    const [game, setGame] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const gameData = gamesData.find((game) => game.id === id);
+
+        if (gameData) {
+            const mainMenuImage = imagesContext(`./${gameData.id}/${gameData.mainMenu}`);
+            const icon = imagesContext(`./${gameData.id}/${gameData.icon}`);
+            const screenshots = gameData.screenshots.map((screenshot) => imagesContext(`./${gameData.id}/${screenshot}`));
+
+            setGame({ ...gameData, mainMenu: mainMenuImage, icon, screenshots });
+        }
+
+        setLoading(false);
+    }, [id]);
+
+    if (loading) {
+        return;
+    }
 
     if (!game) {
         return <h1>Game not found</h1>;
@@ -19,8 +42,8 @@ const ProjectDetailPage = ({ games }) => {
     const paragraphs = description.split('\n\n');
 
     return (
-        <div className="container project-page">
-            <Fade duration={1250} triggerOnce>
+        <PageTransition>
+            <Container className="project-page">
                 <h1>{title}</h1>
                 {paragraphs.map((paragraph, index) => (
                     <p key={index} className="description">{paragraph}</p>
@@ -66,8 +89,8 @@ const ProjectDetailPage = ({ games }) => {
                         To play the game, download the .zip, extract the files to a folder, then run the .exe inside.
                     </p>
                 )}
-            </Fade>
-        </div>
+            </Container>
+        </PageTransition>
     );
 };
 
