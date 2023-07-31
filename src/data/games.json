@@ -4,14 +4,14 @@
         "title": "Candy Thief",
         "description": "My journey into game development began at the age of 12 when I created my first video game during a two-week summer camp at SMU in 2014. This camp focused on designing 2D platformers and provided an incredible learning experience, sparking my passion for game development.\n\nThis project introduced me to various skills, including image editing with Photoshop, coding in C#, and organization and planning techniques. The game laid the foundation for my continued growth in the field and set me on the path to creating more complex and engaging games.",
         "year": 2014,
-        "mainMenu": "CandyThief-MainMenu.jpg",
+        "mainMenu": "CandyThief-MainMenu.webp",
         "screenshots": [
-            "CandyThief1.jpg",
-            "CandyThief2.jpg"
+            "CandyThief1.webp",
+            "CandyThief2.webp"
         ],
         "video": "",
         "downloadLink": "https://www.dropbox.com/s/15zdojtt50vm4ob/Debugging.exe?dl=0",
-        "icon": "CandyThief-Icon.png",
+        "icon": "CandyThief-Icon.webp",
         "zip": false
     },
     {
@@ -19,18 +19,18 @@
         "title": "Debugging",
         "description": "Over three months, my team and I developed this game for the Texas Technology Student Association's statewide video game design competition. I was assigned a team with no prior game design experience, so we chose to create a 2D platformer, which would be easier for the other members to learn and contribute to. As an experienced 2D game developer, I added extra features to make our game stand out from the competition.\n\nThis project marked my first time working on a game with a team. I was responsible for all of the scripting and a significant portion of the level design. Each year, TSA announces a theme for the competition, and our game had to follow the 'TSA Based' theme. We interpreted the theme literally, designing a game in which players could 'switch careers' and use abilities related to different professions.\n\nThe game's story revolves around a computer plagued by a virus. Players must solve puzzles and 'debug' the computer before the virus destroys it. For example, the Architect can build objects into existence, while the Robotic Engineer can spawn a small, controllable robot to access tight spaces and solve puzzles. In total, I dedicated over 500 hours to this project, making it the most complete and closest to publishing of any of my PC games.\n\nOur hard work paid off when we placed in the finals at the state competition. Through this project, I learned valuable skills in collaboration, teamwork, code documentation, and much more. I am extremely proud of this game and the growth it represents.",
         "year": 2019,
-        "mainMenu": "Debugging-MainMenu.jpg",
+        "mainMenu": "Debugging-MainMenu.webp",
         "screenshots": [
-            "Debugging1.jpg",
-            "Debugging2.jpg",
-            "Debugging3.jpg",
-            "Debugging4.jpg",
-            "Debugging5.jpg",
-            "Debugging6.jpg"
+            "Debugging1.webp",
+            "Debugging2.webp",
+            "Debugging3.webp",
+            "Debugging4.webp",
+            "Debugging5.webp",
+            "Debugging6.webp"
         ],
         "video": "https://youtu.be/fG5Cb3R4ORw",
         "downloadLink": "https://www.dropbox.com/s/15zdojtt50vm4ob/Debugging.exe?dl=0",
-        "icon": "Debugging-Icon.png",
+        "icon": "Debugging-Icon.webp",
         "zip": false
     },
     {
@@ -38,16 +38,16 @@
         "title": "Fade",
         "description": "In 2018, I set out to create a mobile game, as all of my previous projects had been exclusively for computers. My initial idea was a 2D platformer with a dark screen that lit up as areas were discovered. Unfortunately, after extensive research, I couldn't find a way to implement this concept within Unity using my skillset, so I abandoned the project.\n\nLater that year, I attempted another mobile game with a similar concept, this time featuring an endless side-scrolling mechanic where players would tap to make a ball jump. Despite my enthusiasm, I encountered issues with setting up the Java Development Kit (JDK) in Unity, which prevented me from building the game for mobile devices.\n\nIn 2019, I revisited the mobile game idea once again, maintaining the concept of limited visibility around the player. This iteration was a casual game where players drag the character to dodge moving rectangles, which increase in speed over time. This time, I successfully set up the JDK and even implemented advanced features like a Google Play leaderboard connected to users' Google Play accounts.\n\nI decided to publish the game once it reached a polished state, so I purchased a Google Developer License and released it. This project provided valuable insights into the business and administrative aspects of game development and publishing. I'm excited about the possibility of continuing to update and improve this game in the future.",
         "year": 2019,
-        "mainMenu": "Fade-MainMenu.jpg",
+        "mainMenu": "Fade-MainMenu.webp",
         "screenshots": [
-            "Fade1.jpg",
-            "Fade2.jpg",
-            "Fade3.jpg",
-            "Fade4.jpg"
+            "Fade1.webp",
+            "Fade2.webp",
+            "Fade3.webp",
+            "Fade4.webp"
         ],
         "video": "https://www.youtube.com/watch?v=tHt2ClgeouE",
         "downloadLink": "https://play.google.com/store/apps/details?id=com.bowlinggames.fade",
-        "icon": "Fade-Icon.png",
+        "icon": "Fade-Icon.webp",
         "zip": false
     },
     {
@@ -55,14 +55,14 @@
         "title": "Future Me",
         "description": "This unique project is the only one on this site created as part of a school assignment. Despite not being a typical game, I am proud of the results given my knowledge at the time. At the beginning of my sophomore year in high school, my English teacher assigned a project requiring us to research three colleges and create a presentation showcasing our findings.\n\nI decided to turn this task into a game where players drive down different paths to explore information about each of the three colleges. Developed in just one week, this project was one of my first forays into 3D game design. I am particularly proud of how well the driving mechanics turned out.\n\nThis game serves as an example of how I have utilized Unity for purposes beyond its typical use case. I plan to continue exploring the versatility of Unity in my future projects.",
         "year": 2017,
-        "mainMenu": "FutureMe-MainMenu.jpg",
+        "mainMenu": "FutureMe-MainMenu.webp",
         "screenshots": [
-            "FutureMe1.jpg",
-            "FutureMe2.jpg"
+            "FutureMe1.webp",
+            "FutureMe2.webp"
         ],
         "video": "https://youtu.be/zZshChd3Uig",
         "downloadLink": "https://www.dropbox.com/s/zdg6b83k90mmcv0/FutureMe.exe?dl=0",
-        "icon": "FutureMe-Icon.png",
+        "icon": "FutureMe-Icon.webp",
         "zip": false
     },
     {
@@ -70,15 +70,15 @@
         "title": "Minion Mania",
         "description": "Created in 2015 during the same 2-week summer SMU video game design camp I attended in 2014 (where I made Candy Thief), this game was inspired by my 6-year-old sister's love for the Minions from Despicable Me. I decided to make a 2D arcade game just for her, which turned out to be both fun to play and develop.\n\nThis project allowed me to explore beyond the standard 2D platformer and challenged me to create most of the visuals using the Photoshop skills I had acquired. It also marked a significant milestone in my game design journey as I coded some of my first scripts entirely by myself. Overall, this game represents an exciting and important stepping stone in my growth as a game developer.",
         "year": 2015,
-        "mainMenu": "MinionMania-MainMenu.jpg",
+        "mainMenu": "MinionMania-MainMenu.webp",
         "screenshots": [
-            "MinionMania1.jpg",
-            "MinionMania2.jpg",
-            "MinionMania3.jpg"
+            "MinionMania1.webp",
+            "MinionMania2.webp",
+            "MinionMania3.webp"
         ],
         "video": "https://youtu.be/bFAUzpeL2Iw",
         "downloadLink": "https://www.dropbox.com/s/vd3dl2g6k681i8s/MinionMania.exe?dl=0",
-        "icon": "MinionMania-Icon.png",
+        "icon": "MinionMania-Icon.webp",
         "zip": false
     },
     {
@@ -86,28 +86,28 @@
         "title": "Neon Signs",
         "description": "Developing 'Neon Signs' was an exciting and challenging journey, as my goal was to create an educational game that could improve handwriting skills for potentially anyone. Players assume the role of a custom neon sign business owner and engage in various writing challenges with increasing levels of difficulty. They receive feedback on their handwriting, enabling them to refine their writing skills and develop consistency in their style. I focused on motivating players through in-game rewards, such as unlocking additional sign colors and tracking their progress via a history screen. Ensuring that the game provided specific, actionable feedback and recognized players' achievements was essential for creating an engaging and rewarding experience.\n\nOne of the biggest challenges I faced was implementing the handwriting analysis feature, which is crucial to the game. I utilized Google Cloud Vision OCR API to verify the correctness of the player's written words, and then captured online handwriting data separately to evaluate other factors such as writing time, cursive level, smoothness, and standard deviation measures. This process required a deep understanding of how to effectively capture and analyze handwriting data, an area in which I had no prior experience and had to conduct extensive research.\n\nCreating this game not only helped me become a more well-rounded game developer but also allowed me to create a unique and educational experience for players. Through this game, players can improve their handwriting skills in an engaging and interactive way. I am proud of the final product and the challenges I overcame to make it a reality.",
         "year": 2023,
-        "mainMenu": "NeonSigns-MainMenu.jpg",
+        "mainMenu": "NeonSigns-MainMenu.webp",
         "screenshots": [
-            "NeonSigns1.jpg",
-            "NeonSigns2.jpg",
-            "NeonSigns3.jpg",
-            "NeonSigns4.jpg",
-            "NeonSigns5.jpg",
-            "NeonSigns6.jpg",
-            "NeonSigns7.jpg",
-            "NeonSigns8.jpg",
-            "NeonSigns9.jpg",
-            "NeonSigns10.jpg",
-            "NeonSigns11.jpg",
-            "NeonSigns12.jpg",
-            "NeonSigns13.jpg",
-            "NeonSigns14.jpg",
-            "NeonSigns15.jpg",
-            "NeonSigns16.jpg"
+            "NeonSigns1.webp",
+            "NeonSigns2.webp",
+            "NeonSigns3.webp",
+            "NeonSigns4.webp",
+            "NeonSigns5.webp",
+            "NeonSigns6.webp",
+            "NeonSigns7.webp",
+            "NeonSigns8.webp",
+            "NeonSigns9.webp",
+            "NeonSigns10.webp",
+            "NeonSigns11.webp",
+            "NeonSigns12.webp",
+            "NeonSigns13.webp",
+            "NeonSigns14.webp",
+            "NeonSigns15.webp",
+            "NeonSigns16.webp"
         ],
         "video": "https://youtu.be/Nw9rqUvjeEI",
         "downloadLink": "https://www.dropbox.com/s/lwtru4v43ygv72k/Neon-Signs.zip?dl=0",
-        "icon": "NeonSigns-Icon.png",
+        "icon": "NeonSigns-Icon.webp",
         "zip": true
     },
     {
@@ -115,20 +115,20 @@
         "title": "The Adventures of Nock Fletcher",
         "description": "Designed for the Technology Student Association's Video Game Design competition, this game followed in the footsteps of Debugging from the previous year. This time, I wanted to challenge myself by using a new render pipeline and focusing on 3D visuals. Our team aimed to create stunning graphics to set ourselves apart from the competition. Unfortunately, the convention was canceled due to COVID-19, and we never got to compete. As a result, we lost motivation and didn't finish the game.\n\nThough the gameplay is limited and the game can be laggy as it wasn't optimized yet, I am proud of the hard work and uniqueness we achieved. The story follows an experienced archer on their way to a castle archery tournament, using special arrows to complete puzzles across different zones. These arrows included bomb, ice, fire, sonar, and chain arrows, each with multiple uses, such as creating ziplines or climbing chains.\n\nAs the main scripter and a level designer, I focused on perfecting the mechanics, which led to incomplete puzzles. However, this project was an invaluable learning experience. I enhanced my skills in 3D modeling, sound design, animation, scripting, shader development, photo editing, and more, ultimately becoming a more well-rounded game developer.",
         "year": 2020,
-        "mainMenu": "NockFletcher-MainMenu.jpg",
+        "mainMenu": "NockFletcher-MainMenu.webp",
         "screenshots": [
-            "NockFletcher1.jpg",
-            "NockFletcher2.jpg",
-            "NockFletcher3.jpg",
-            "NockFletcher4.jpg",
-            "NockFletcher5.jpg",
-            "NockFletcher6.jpg",
-            "NockFletcher7.jpg",
-            "NockFletcher8.jpg"
+            "NockFletcher1.webp",
+            "NockFletcher2.webp",
+            "NockFletcher3.webp",
+            "NockFletcher4.webp",
+            "NockFletcher5.webp",
+            "NockFletcher6.webp",
+            "NockFletcher7.webp",
+            "NockFletcher8.webp"
         ],
         "video": "https://youtu.be/UGk-haOq9-c",
         "downloadLink": "https://www.dropbox.com/s/9pou47vfqp6zbjk/AdventuresOfNockFletcher.exe?dl=0",
-        "icon": "NockFletcher-Icon.png",
+        "icon": "NockFletcher-Icon.webp",
         "zip": false
     },
     {
@@ -136,17 +136,17 @@
         "title": "COVID-19 Time Capsule",
         "description": "Created for a world history class assignment, this game showcases a time capsule of five different items that gained popularity during the pandemic. I saw this as a unique opportunity to further develop my game design skills while also creating a standout presentation to improve my grade in the class.\n\nI chose to focus on various apps that gained popularity during the pandemic and included descriptions for each item. After creating a fake phone UI in Unity, I realized the game lacked substantial gameplay. With extra time on my hands, I built a 3D environment and learned about real-time terrain modification to create a digging system. This allowed the player to 'find' the time capsule and explore the apps.\n\nOverall, this game was an excellent chance to practice previously learned skills while also delving into UI/UX design within a game engine.",
         "year": 2021,
-        "mainMenu": "TimeCapsule-MainMenu.jpg",
+        "mainMenu": "TimeCapsule-MainMenu.webp",
         "screenshots": [
-            "Capsule1.jpg",
-            "Capsule2.jpg",
-            "Capsule3.jpg",
-            "Capsule4.jpg",
-            "Capsule5.jpg"
+            "Capsule1.webp",
+            "Capsule2.webp",
+            "Capsule3.webp",
+            "Capsule4.webp",
+            "Capsule5.webp"
         ],
         "video": "https://youtu.be/2tkK14yDTrA",
         "downloadLink": "https://www.dropbox.com/s/zstj92dbz4i32e4/Covid%20Time%20Capsule.zip?dl=0",
-        "icon": "TimeCapsule-Icon.png",
+        "icon": "TimeCapsule-Icon.webp",
         "zip": true
     },
     {
@@ -154,21 +154,21 @@
         "title": "Time Management",
         "description": "Developed as part of a team for the Texas Aggie Game Developers' semesterly game jam, this project marked the first full game I'd designed in over a year. I chose to work with a team of beginners, helping them learn while re-familiarizing myself with 2D game design basics.\n\nMy role in the team involved programming, game design assistance, and organizing weekly group meetings. To challenge myself within the simple-style game, I devised mechanics that tested my abilities and provided a unique gaming experience for the player. Initially, we conceptualized a 2D puzzle platformer, but after receiving feedback from the organization, we pivoted to an endless 2D tower defense game. This change allowed us to reduce the project's scope and make it more manageable alongside our classes.\n\nOverall, this game served as both a refresher for me and an invaluable team-based experience that further developed my collaboration skills.",
         "year": 2021,
-        "mainMenu": "TimeManagement-MainMenu.jpg",
+        "mainMenu": "TimeManagement-MainMenu.webp",
         "screenshots": [
-            "TimeManagement1.jpg",
-            "TimeManagement2.jpg",
-            "TimeManagement3.jpg",
-            "TimeManagement4.jpg",
-            "TimeManagement5.jpg",
-            "TimeManagement6.jpg",
-            "TimeManagement7.jpg",
-            "TimeManagement8.jpg",
-            "TimeManagement9.jpg"
+            "TimeManagement1.webp",
+            "TimeManagement2.webp",
+            "TimeManagement3.webp",
+            "TimeManagement4.webp",
+            "TimeManagement5.webp",
+            "TimeManagement6.webp",
+            "TimeManagement7.webp",
+            "TimeManagement8.webp",
+            "TimeManagement9.webp"
         ],
         "video": "https://youtu.be/GZtjhoAxUF0",
         "downloadLink": "https://www.dropbox.com/s/ngi0p0fbhktn7zt/TimeManagement.zip?dl=0",
-        "icon": "TimeManagement-Icon.png",
+        "icon": "TimeManagement-Icon.webp",
         "zip": true
     },
     {
@@ -176,17 +176,17 @@
         "title": "Vaccination Destination",
         "description": "Developed as part of a team of four, this game was created during the Texas A&M Howdy Hack, an intense 24-hour event. Marking my first experience at a hackathon—which was held entirely virtually due to COVID-19—it challenged us to complete a project in a very short time frame.\n\nReturning to a simple 2D platformer was a refreshing change after working on more complex 3D and alternative 2D games. Despite not advancing far with the levels, the event provided invaluable lessons in teamwork and honing our skills under time constraints.",
         "year": 2020,
-        "mainMenu": "VD-MainMenu.jpg",
+        "mainMenu": "VD-MainMenu.webp",
         "screenshots": [
-            "VD1.jpg",
-            "VD2.jpg",
-            "VD3.jpg",
-            "VD4.jpg",
-            "VD5.jpg"
+            "VD1.webp",
+            "VD2.webp",
+            "VD3.webp",
+            "VD4.webp",
+            "VD5.webp"
         ],
         "video": "https://youtu.be/kKGOXYL2RmA",
         "downloadLink": "https://www.dropbox.com/s/1h6v28a8dmyhn85/VaccinationDestination.exe?dl=0",
-        "icon": "DownloadIconWhite.png",
+        "icon": "DownloadIconWhite.webp",
         "zip": false
     }
 ]
