@@ -1,0 +1,185 @@
+/* Section spacing */
+section {
+    padding: 2.5rem 0;
+}
+
+/* Stats row */
+.stats-row {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--color-text);
+    margin-top: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.8;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background-color: var(--color-secondary);
+    opacity: 0.6;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-entry:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: calc(-2rem - 4px);
+    top: 0.4rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+}
+
+.timeline-year {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.25rem;
+}
+
+/* Skills & Tools */
+.skills-row {
+    margin-top: 1.5rem;
+    row-gap: 1rem;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.25rem 0.75rem 1rem;
+    height: 100%;
+    gap: 0.5rem;
+}
+
+.skill-card-icon {
+    font-size: 2rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.skill-card-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-secondary);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+    margin-top: 0.25rem;
+}
+
+.skill-tag {
+    font-size: 0.72rem;
+    background: rgba(203, 152, 33, 0.12);
+    border: 1px solid rgba(203, 152, 33, 0.25);
+    color: var(--color-text);
+    border-radius: 99px;
+    padding: 0.15rem 0.55rem;
+}
+
+/* Connect */
+.connect-section {
+    margin-bottom: 3rem;
+}
+
+.links-row {
+    margin-top: 1.5rem;
+    row-gap: 1rem;
+}
+
+.link-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem 0.75rem 1.25rem;
+    text-decoration: none;
+    color: var(--color-text);
+    height: 100%;
+    gap: 0.4rem;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.link-card:hover {
+    text-decoration: none;
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--link-color, var(--color-accent));
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.link-card-icon {
+    font-size: 2.25rem;
+    flex-shrink: 0;
+}
+
+.link-card-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-text);
+    margin-top: 0.25rem;
+}
+
+.link-card-desc {
+    font-size: 0.72rem;
+    opacity: 0.55;
+    color: var(--color-text);
+    word-break: break-all;
+}

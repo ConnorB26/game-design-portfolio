@@ -1,29 +1,40 @@
-.main-content {
-  padding-top: 1.5rem;
-  flex-grow: 1;
+:root {
+    --color-accent: #CB9821;
+    --color-secondary: #4A9FD4;
+    --color-text: rgb(194, 205, 238);
+    --color-bg-start: #0d2145;
+    --color-bg-mid: #071530;
+    --color-bg-end: #020810;
 }
 
+.main-content {
+    padding-top: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Fixed: selectors now properly scoped to .main-content */
 .main-content p,
-li {
-  color: rgb(194, 205, 238);
+.main-content li {
+    color: var(--color-text);
 }
 
 .main-content h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #CB9821;
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5 {
+    color: var(--color-accent);
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
-  max-width: 85% !important;
+    max-width: 85% !important;
 }
 
 h1,
@@ -32,13 +43,36 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold !important;
+    font-weight: bold !important;
 }
 
 .gradient__bg {
-  background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-  background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-  background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-  background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-  background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background:
+        radial-gradient(ellipse 90% 55% at 50% 0%, rgba(74, 159, 212, 0.13) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 85% 100%, rgba(13, 33, 69, 0.6) 0%, transparent 70%),
+        linear-gradient(180deg, #0d2145 0%, #071530 55%, #020810 100%);
+    background-attachment: fixed;
+}
+
+/* Skip navigation link — visible only on keyboard focus */
+.skip-nav {
+    position: absolute;
+    top: -999px;
+    left: 0;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background: var(--color-accent);
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.skip-nav:focus {
+    top: 0;
+}
+
+.page-loading {
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-text);
 }

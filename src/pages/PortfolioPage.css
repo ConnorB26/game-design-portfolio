@@ -1,32 +1,172 @@
-.gameCardGrid {
+/* ── Portfolio Timeline ───────────────────────────────────────── */
+
+.portfolio-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 5rem;
+}
+
+/* Vertical center spine */
+.tl-spine {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        var(--color-secondary) 4%,
+        var(--color-secondary) 96%,
+        transparent 100%
+    );
+    opacity: 0.4;
+    z-index: 0;
+}
+
+/* Each game row */
+.tl-item {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+
+/* ── Dot (always center column) ───────────────────────────────── */
+
+.tl-dot {
+    grid-column: 2;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45rem;
+    z-index: 2;
+    position: relative;
 }
 
-.gameCard {
-    margin-bottom: 2rem;
-    flex: 1 1 auto;
-    max-width: 640px;
-    border: none;
-    transition: transform 0.3s;
+.tl-dot-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    box-shadow: 0 0 10px rgba(203, 152, 33, 0.55);
+    flex-shrink: 0;
 }
 
-.gameCard:hover {
-    transform: scale(1.05);
+.tl-year-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
 }
 
-.cardImg {
-    max-width: 100%;
-    height: auto;
-    max-height: 360px;
+/* ── Card wrapper positioning ─────────────────────────────────── */
+
+.tl-left .tl-card-wrapper {
+    grid-column: 1;
+    padding-right: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tl-right .tl-card-wrapper {
+    grid-column: 3;
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* ── Card ─────────────────────────────────────────────────────── */
+
+.tl-card {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    text-decoration: none;
+    transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.tl-card:hover {
+    border-color: rgba(203, 152, 33, 0.55);
+    box-shadow: 0 8px 36px rgba(203, 152, 33, 0.18);
+    transform: scale(1.025);
+    text-decoration: none;
+}
+
+.tl-card-img {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    border-radius: 12px;
+    display: block;
 }
 
-@media screen and (max-width: 767px) {
-    .gameCardGrid {
-        flex-direction: column;
+.tl-card-footer {
+    padding: 0.65rem 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.tl-card-title {
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tl-card-year-badge {
+    color: var(--color-secondary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    flex-shrink: 0;
+    opacity: 0.85;
+}
+
+/* ── Mobile ───────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+    .tl-spine {
+        left: 20px;
+        transform: none;
+    }
+
+    .tl-item {
+        grid-template-columns: 40px 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .tl-dot {
+        grid-column: 1 !important;
+        grid-row: 1;
+        align-items: center;
+    }
+
+    .tl-left .tl-card-wrapper,
+    .tl-right .tl-card-wrapper {
+        grid-column: 2 !important;
+        padding-left: 0.75rem;
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+
+    .tl-card {
+        max-width: 100%;
+    }
+
+    .tl-card-img {
+        height: 160px;
     }
 }

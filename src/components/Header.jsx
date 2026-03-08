@@ -7,9 +7,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   const routes = [
-    { path: "/", name: "Home" },
-    { path: "/portfolio", name: "Portfolio" },
-    { path: "/about", name: "About" },
+    { path: "/", name: "Home", end: true },
+    { path: "/portfolio", name: "Portfolio", end: false },
   ];
 
   return (
@@ -23,7 +22,14 @@ const Header = () => {
         <Navbar.Collapse id="navbar">
           <Nav className="ms-auto">
             {routes.map(route => (
-              <NavLink to={route.path} className={`nav-link ${styles.navItemText}`} activeClassName={styles.activeLink} key={route.path}>
+              <NavLink
+                to={route.path}
+                end={route.end}
+                className={({ isActive }) =>
+                  `nav-link ${styles.navItemText}${isActive ? ` ${styles.activeLink}` : ''}`
+                }
+                key={route.path}
+              >
                 {route.name}
               </NavLink>
             ))}
