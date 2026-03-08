@@ -7,7 +7,6 @@ import './App.css';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const PortfolioPage = lazy(() => import('./pages/PortfolioPage'));
 const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage'));
-const AboutPage = lazy(() => import('./pages/AboutPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // Inner component so useLocation can be called inside Router
@@ -25,7 +24,6 @@ function AppContent() {
                             <Route path="/" element={<HomePage />} />
                             <Route path="/portfolio" element={<PortfolioPage />} />
                             <Route path="/portfolio/:id" element={<ProjectDetailPage />} />
-                            <Route path="/about" element={<AboutPage />} />
                             <Route path="*" element={<NotFoundPage />} />
                         </Routes>
                     </AnimatePresence>

@@ -9,7 +9,6 @@ const Header = () => {
   const routes = [
     { path: "/", name: "Home", end: true },
     { path: "/portfolio", name: "Portfolio", end: false },
-    { path: "/about", name: "About", end: false },
   ];
 
   return (

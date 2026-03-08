@@ -1,8 +1,10 @@
 :root {
     --color-accent: #CB9821;
+    --color-secondary: #4A9FD4;
     --color-text: rgb(194, 205, 238);
-    --color-bg-start: rgba(0, 40, 83, 1);
-    --color-bg-end: rgba(4, 12, 24, 1);
+    --color-bg-start: #0d2145;
+    --color-bg-mid: #071530;
+    --color-bg-end: #020810;
 }
 
 .main-content {
@@ -44,9 +46,12 @@ h6 {
     font-weight: bold !important;
 }
 
-/* Fixed: removed redundant vendor prefixes, use CSS variable for colors */
 .gradient__bg {
-    background: radial-gradient(circle at 3% 25%, var(--color-bg-start) 0%, var(--color-bg-end) 100%);
+    background:
+        radial-gradient(ellipse 90% 55% at 50% 0%, rgba(74, 159, 212, 0.13) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 85% 100%, rgba(13, 33, 69, 0.6) 0%, transparent 70%),
+        linear-gradient(180deg, #0d2145 0%, #071530 55%, #020810 100%);
+    background-attachment: fixed;
 }
 
 /* Skip navigation link — visible only on keyboard focus */
