@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import { AnimatePresence } from 'framer-motion';
 import './App.css';
 
@@ -32,7 +31,6 @@ function AppContent() {
                     </AnimatePresence>
                 </Suspense>
             </main>
-            <Footer />
         </>
     );
 }
