@@ -25,20 +25,20 @@ const AboutPage = () => {
           <li><FaCodeBranch /> <strong>Source Control:</strong> Git</li>
           <li><FaStickyNote /> <strong>Organization and Planning:</strong> Trello and Microsoft Word</li>
         </ul>
-        <h2>Contact & Links</h2>
+        <h2>Contact &amp; Links</h2>
         <p>
           Below, you will find various ways to get in touch with me as well as links to my online profiles and portfolios. These resources showcase my skills, experiences, and projects in different areas of game development, design, and programming.
         </p>
         <ul>
-          <li><FaEnvelope /> <strong>Game Design Email:</strong> <a href={'mailto:bowlinggamedesign@gmail.com'} target="_blank" rel="noopener noreferrer">bowlinggamedesign@gmail.com</a></li>
-          <li><FaEnvelope /> <strong>Personal Email:</strong> <a href={'mailto:connorbowling26@gmail.com'} target="_blank" rel="noopener noreferrer">connorbowling26@gmail.com</a></li>
-          <li><FaLinkedin /> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/connor-bowling/" target="_blank" rel="noreferrer">https://www.linkedin.com/in/connor-bowling/</a></li>
-          <li><FaGithub /> <strong>GitHub:</strong> <a href="https://www.github.com/ConnorB26" target="_blank" rel="noreferrer">https://www.github.com/ConnorB26</a></li>
-          <li><FaGooglePlay /> <strong>Google Play:</strong> <a href="https://play.google.com/store/apps/developer?id=BowlingGames" target="_blank" rel="noreferrer">https://play.google.com/store/apps/developer?id=BowlingGames</a></li>
-          <li><FaYoutube /> <strong>YouTube:</strong> <a href="https://www.youtube.com/channel/UC7BMrUMx2Ox0RQjxNJDK1jQ" target="_blank" rel="noreferrer">https://www.youtube.com/channel/UC7BMrUMx2Ox0RQjxNJDK1jQ</a></li>
-          <li><FaFilePdf /> <a href="https://drive.google.com/file/d/1xVSFtmVFo54qaA_uwgGYNh_F-e0wqIXH/view" target="_blank" rel="noreferrer"><strong>Resume</strong> </a></li>
+          <li><FaEnvelope /> <strong>Game Design Email:</strong> <a href="mailto:bowlinggamedesign@gmail.com" target="_blank" rel="noopener noreferrer">bowlinggamedesign@gmail.com</a></li>
+          <li><FaEnvelope /> <strong>Personal Email:</strong> <a href="mailto:connorbowling26@gmail.com" target="_blank" rel="noopener noreferrer">connorbowling26@gmail.com</a></li>
+          <li><FaLinkedin /> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/connor-bowling/" target="_blank" rel="noreferrer">connor-bowling</a></li>
+          <li><FaGithub /> <strong>GitHub:</strong> <a href="https://www.github.com/ConnorB26" target="_blank" rel="noreferrer">ConnorB26</a></li>
+          <li><FaGooglePlay /> <strong>Google Play:</strong> <a href="https://play.google.com/store/apps/developer?id=BowlingGames" target="_blank" rel="noreferrer">BowlingGames</a></li>
+          <li><FaYoutube /> <strong>YouTube:</strong> <a href="https://www.youtube.com/channel/UC7BMrUMx2Ox0RQjxNJDK1jQ" target="_blank" rel="noreferrer">Bowling Game Design</a></li>
+          <li><FaFilePdf /> <a href="https://drive.google.com/file/d/1xVSFtmVFo54qaA_uwgGYNh_F-e0wqIXH/view" target="_blank" rel="noreferrer"><strong>Resume</strong></a></li>
         </ul>
-      </Container >
+      </Container>
     </PageTransition>
   );
 };

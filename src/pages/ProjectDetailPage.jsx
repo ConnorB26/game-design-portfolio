@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
+import { Container, Spinner } from 'react-bootstrap';
 import gamesData from '../data/games.json';
 import PageTransition from '../components/PageTransition';
+import { loadGameImages } from '../utils/imageLoader';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './ProjectDetailPage.css';
-import { Container } from 'react-bootstrap';
-
-const imagesContext = require.context('../assets/games', true, /\.(webp)$/);
 
 const ProjectDetailPage = () => {
     const { id } = useParams();
@@ -15,21 +14,21 @@ const ProjectDetailPage = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const gameData = gamesData.find((game) => game.id === id);
-
+        const gameData = gamesData.find((g) => g.id === id);
         if (gameData) {
-            const mainMenuImage = imagesContext(`./${gameData.id}/${gameData.mainMenu}`);
-            const icon = imagesContext(`./${gameData.id}/${gameData.icon}`);
-            const screenshots = gameData.screenshots.map((screenshot) => imagesContext(`./${gameData.id}/${screenshot}`));
-
-            setGame({ ...gameData, mainMenu: mainMenuImage, icon, screenshots });
+            setGame(loadGameImages(gameData));
         }
-
         setLoading(false);
     }, [id]);
 
     if (loading) {
-        return;
+        return (
+            <div className="page-loading">
+                <Spinner animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </div>
+        );
     }
 
     if (!game) {
@@ -37,9 +36,12 @@ const ProjectDetailPage = () => {
     }
 
     const { title, description, video, downloadLink, icon, zip, mainMenu, screenshots } = game;
-    const videoId = video.split('/').pop();
-    const images = [mainMenu].concat(screenshots);
+    const videoId = video ? video.split('/').pop() : null;
     const paragraphs = description.split('\n\n');
+    const isGooglePlay = downloadLink && downloadLink.includes('play.google.com');
+    const downloadLabel = isGooglePlay
+        ? `Download ${title} on Google Play`
+        : `Download ${title} for Windows`;
 
     return (
         <PageTransition>
@@ -49,37 +51,41 @@ const ProjectDetailPage = () => {
                     <p key={index} className="description">{paragraph}</p>
                 ))}
 
-                {screenshots && screenshots.length > 0 && (
-                    <div className='group'>
-                        <h2>Gameplay Screenshots</h2>
+                {mainMenu && (
+                    <div className="group">
+                        <h2>Screenshots</h2>
                         <Carousel showThumbs={false} className="image-gallery-slide" dynamicHeight>
-                            {images.map((image, index) => (
+                            {[mainMenu, ...screenshots].map((image, index) => (
                                 <div key={index}>
-                                    <img src={image} alt="" />
+                                    <img
+                                        src={image}
+                                        alt={`${title} screenshot ${index + 1} of ${screenshots.length + 1}`}
+                                    />
                                 </div>
                             ))}
                         </Carousel>
                     </div>
                 )}
 
-                {video && (
-                    <div className='group'>
+                {videoId && (
+                    <div className="group">
                         <h2>Game Playthrough</h2>
                         <iframe
-                            title={`YouTube video player for ${title}`}
+                            title={`${title} playthrough video`}
                             src={`https://www.youtube.com/embed/${videoId}`}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                            width="640" height="360"
+                            width="640"
+                            height="360"
                         />
                     </div>
                 )}
 
                 {downloadLink && (
-                    <div className='group'>
+                    <div className="group">
                         <h2>Game Download</h2>
-                        <a href={downloadLink} target="_blank" rel="noreferrer">
-                            <img src={icon} alt="Download" className="icon" />
+                        <a href={downloadLink} target="_blank" rel="noreferrer" aria-label={downloadLabel}>
+                            <img src={icon} alt={downloadLabel} className="icon" />
                         </a>
                     </div>
                 )}
